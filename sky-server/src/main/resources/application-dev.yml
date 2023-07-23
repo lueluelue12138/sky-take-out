@@ -11,3 +11,12 @@ sky:
     access-key-id: LTAI5tB4rdwKGzwVJzdNMFiZ
     access-key-secret: 8BhMV6AAQq0XwVJPwXOWDA4IT1YJZq
     bucket-name: sky-pwd
+  redis:
+    host: localhost
+    port: 6379
+    password: 1234
+    database: 1
+    max-active: 10
+    max-idle: 10
+    min-idle: 1
+    time-between-eviction-runs: 10s
