@@ -21,6 +21,6 @@ sky:
     min-idle: 1
     time-between-eviction-runs: 10s
   wechat:
-    appid: wx8b2103b76f891eba
-    secret: 72a01bf0424e70e0bf730f4d2d50b1ae
+    appid: wx2461097ae4ee1aab
+    secret: 8b3ec1c01abc6620ed71f9c2d97b116d
 
