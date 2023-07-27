@@ -69,3 +69,7 @@ sky:
     weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath}
     notifyUrl: ${sky.wechat.notifyUrl}
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
+  shop:
+    address: 东莞市东城区温塘西路362号罗定腾旺阁美食
+  baidu:
+    ak: cOj37PslQ5Oz21x8YjmzezQTem53dgGu
