@@ -59,6 +59,35 @@ public class PayNotifyController {
     }
 
     /**
+     * 退款成功回调
+     * @param request
+     * @param response
+     * @throws Exception
+     */
+    @RequestMapping("/refundSuccess")
+    public void refundSuccessNotify(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        // 读取数据
+        String body = readData(request);
+        log.info("退款成功回调:{}", body);
+
+        // 数据解密
+        String plainText = decryptData(body);
+        log.info("解密后的文本:{}", plainText);
+
+        JSONObject jsonObject = JSON.parseObject(plainText);
+        String outTradeNo = jsonObject.getString("out_trade_no");
+        String outRefundNo = jsonObject.getString("out_refund_no");
+
+        log.info("商户平台订单号:{}", outTradeNo);
+        log.info("商户退款单号:{}", outRefundNo);
+
+        // 业务处理
+
+        // 给微信响应
+        responseToWeixin(response);
+    }
+
+    /**
      * 读取数据
      *
      * @param request
