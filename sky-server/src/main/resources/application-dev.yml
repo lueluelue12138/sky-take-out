@@ -28,6 +28,6 @@ sky:
     privateKeyFilePath: C:\Users\D\WXCertUtil\WXCertUtil\cert\1649629874_20230727_cert\apiclient_key.pem
     apiV3Key: fsdg468asdf3ht4r843fASGFR5D5ASF6
     weChatPayCertFilePath: C:\Users\D\WXCertUtil\WXCertUtil\pingtai\wechatpay_1A6427513DB5CDB77490DD404E5C1B88010B5F94.pem
-    notifyUrl: https://69eafb11.r17.cpolar.top/notify/paySuccess
-    refundNotifyUrl: https://69eafb11.r17.cpolar.top/notify/refundSuccess
+    notifyUrl: https://5cf91c61.r17.cpolar.top/notify/paySuccess
+    refundNotifyUrl: https://5cf91c61.r17.cpolar.top/notify/refundSuccess
 
