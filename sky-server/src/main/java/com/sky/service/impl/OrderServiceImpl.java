@@ -199,6 +199,8 @@ public class OrderServiceImpl implements OrderService {
         //通过WebSocket实现来单提醒，向客户端浏览器推送消息
         log.info("向管理后台推送来单提醒");
         webSocketServer.sendToAllClient(JSON.toJSONString(map));
+
+//        webSocketServer.sendToUserClient(JSON.toJSONString(map), "1");
         ///////////////////////////////////////////////////
     }
 

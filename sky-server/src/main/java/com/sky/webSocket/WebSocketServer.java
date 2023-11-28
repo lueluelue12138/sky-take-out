@@ -1,6 +1,7 @@
 package com.sky.webSocket;
 
 import org.springframework.stereotype.Component;
+
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
@@ -68,4 +69,14 @@ public class WebSocketServer {
         }
     }
 
+    public void sendToUserClient(String message, String sid) {
+        Session session = sessionMap.get(sid);
+        try {
+            //服务器向客户端发送消息
+            session.getBasicRemote().sendText(message);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

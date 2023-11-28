@@ -17,7 +17,7 @@ spring:
     port: ${sky.redis.port}
     password: ${sky.redis.password}
     database: ${sky.redis.database}
-    lettuce:
+    lettuce: # 使用lettuce客户端
       pool:
         max-active: ${sky.redis.max-active}
         max-idle: ${sky.redis.max-idle}
