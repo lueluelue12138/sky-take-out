@@ -70,6 +70,6 @@ sky:
     notifyUrl: ${sky.wechat.notifyUrl}
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
   shop:
-    address: 东莞市东城区温塘西路362号罗定腾旺阁美食
+    address: ${sky.shop.address}
   baidu:
-    ak: cOj37PslQ5Oz21x8YjmzezQTem53dgGu
+    ak: ${sky.baidu.ak}
